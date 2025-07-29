@@ -35,7 +35,7 @@
 #tour,
 #menu {
     scroll-margin-top: 30px;
-}       
+}
 
 .home-nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -230,4 +230,31 @@ footer {
 
 .bg-green {
     background-color: var(--bg-green);
+}
+
+
+@media screen and (max-width: 576px) {
+    .jumbotron {
+        padding: 100px 0;
+    }
+
+    .home-nav a {
+        font-size: 0.8rem;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+
+    .check h5 {
+        font-size: 1rem;
+    }
+
+    .check p {
+        font-size: 0.8rem;
+    }
 }
