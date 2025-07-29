@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sheena's Pension House</title>
+    <link href="assets/img/logo.jpg" rel="icon">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navs" class="navbar navbar-expand-lg bg-card shadow-sm px-2 px-md-4">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-semibold d-flex" href="#">
+                <img src="assets/img/sheenas-logo.png" alt="Logo" id="logo" class="img-fluid" width="140" height="140">
+            </a>
+
+            <div class="nav-item mb-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tour.html">Tour</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-body-secondary py-3 py-md-5 px-2">
+        <div class="container card shadow-sm border-0">
+            <div class="pt-3">
+                <h6 class="text-center font-poppins content-nav">
+                    <a href="index.html" class="text-muted text-decoration-none">Home</a> > <span
+                        class="text-muted">Menu</span>
+                </h6>
+            </div>
+            <h1 class="font-poppins fw-semibold text-center">Enjoy delicious food</h1>
+            <hr>
+
+            <div class="container p-4">
+                <!-- Favourites -->
+                <div class="favourites">
+                    <h2 class="font-poppins category-title">Favourites ⭐</h2>
+                    <div class="row pt-3 px-0 px-md-5">
+                        <div class="col-6 col-md-3">
+                            <div class="menu-item">
+                                <img src="assets/img/Menu/plain-rice.jpg" alt="Plain Rice" class="menu-item-image">
+                                <div class="menu-item-content p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">Plain Rice</h5>
+                                        <span class="menu-item-price">₱20</span>
+                                    </div>
+                                    <p class="small text-muted pt-2">Plain Rice</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="menu-item">
+                                <img src="assets/img/Menu/coffee.jpg" alt="Coffee" class="menu-item-image">
+                                <div class="menu-item-content p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">Coffee</h5>
+                                        <span class="menu-item-price">₱20</span>
+                                    </div>
+                                    <p class="small text-muted pt-2">3n1 Coffee</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="menu-item">
+                                <img src="assets/img/Menu/fries.jpg" alt="French Fries" class="menu-item-image">
+                                <div class="menu-item-content p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">French Fries</h5>
+                                        <span class="menu-item-price">₱85</span>
+                                    </div>
+                                    <p class="small text-muted pt-2">French Fries</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="menu-item">
+                                <img src="assets/img/Menu/rumcoke.jpg" alt="Rum and Coke" class="menu-item-image">
+                                <div class="menu-item-content p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0">Rum and Coke</h5>
+                                        <span class="menu-item-price">₱65</span>
+                                    </div>
+                                    <p class="small text-muted pt-2">Mix Rum and Coke</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Breakfast -->
+                <div class="menu-category mb-4 p-0 p-md-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h2 class="mb-0 category-title">Breakfast</h2>
+                        <div>
+                            <button class="btn btn-outline-success me-1" data-bs-target="#breakfastCarousel"
+                                data-bs-slide="prev"><i class="bi bi-caret-left small"></i></button>
+                            <button class="btn btn-outline-success" data-bs-target="#breakfastCarousel"
+                                data-bs-slide="next"><i class="bi bi-caret-right small"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Slides -->
+                    <div id="breakfastCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <!-- First Slide -->
+                            <div class="carousel-item active">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/fried-egg.jpg" alt="Fried Egg"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Frieds Egg</h5>
+                                                    <span class="menu-item-price">₱100.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Crispy fried egg served with savory
+                                                    garlic rice and a choice of Filipino-style sausage.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/hotdog.jpg" alt="Hotdog" class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Hotdog</h5>
+                                                    <span class="menu-item-price">₱100.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Juicy hotdogs served with eggs and
+                                                    garlic rice, perfect for a hearty breakfast.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/tocino.jpg" alt="Tocino" class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Tocino</h5>
+                                                    <span class="menu-item-price">₱100.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Sweet and tender cured pork, paired
+                                                    with garlic rice and a sunny-side-up egg.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/longganisa.jpg" alt="Longganisa"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Longganisa</h5>
+                                                    <span class="menu-item-price">₱100.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Traditional Filipino sausage served
+                                                    with garlic rice and a perfectly cooked egg.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/corned-beef.jpg" alt="Corned Beef"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Corned Beef</h5>
+                                                    <span class="menu-item-price">₱100.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Flavorful corned beef cooked with
+                                                    onions and garlic, served with rice and an egg.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/pancit-canton.jpg" alt="Pancit Canton"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Pancit Canton</h5>
+                                                    <span class="menu-item-price">₱100.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Classic stir-fried noodles with
+                                                    vegetables, meat, and a touch of soy sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Third Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/toasted-bread.jpg" alt="Toasted Bread"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Toasted Bread</h5>
+                                                    <span class="menu-item-price">₱100.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Golden-brown toasted bread, perfect for
+                                                    a light breakfast or snack.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/french-bread.jpg" alt="French Bread"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">French Bread</h5>
+                                                    <span class="menu-item-price">₱100.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Soft and flaky French bread served warm
+                                                    with your choice of ham, burger, butter or jam.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/pancake.jpg" alt="Pancake"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Pancake</h5>
+                                                    <span class="menu-item-price">₱100.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Fluffy pancakes drizzled with syrup, a
+                                                    sweet start to your day.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-md-none text-center">
+                        <button class="btn btn-outline-success me-1" data-bs-target="#breakfastCarousel"
+                            data-bs-slide="prev"><i class="bi bi-caret-left small"></i></button>
+                        <button class="btn btn-outline-success" data-bs-target="#breakfastCarousel"
+                            data-bs-slide="next"><i class="bi bi-caret-right small"></i></button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Lunch/Dinner -->
+                <div class="menu-category mb-4 p-0 p-md-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h2 class="mb-0 category-title">Lunch / Dinner</h2>
+                        <div>
+                            <button class="btn btn-outline-success me-1" data-bs-target="#lunchCarousel"
+                                data-bs-slide="prev"><i class="bi bi-caret-left small"></i></button>
+                            <button class="btn btn-outline-success" data-bs-target="#lunchCarousel"
+                                data-bs-slide="next"><i class="bi bi-caret-right small"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Slides -->
+                    <div id="lunchCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <!-- First Slide -->
+                            <div class="carousel-item menu-row active">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/chicken-adobo.jpg" alt="Chicken Adobo"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Chicken Adobo</h5>
+                                                    <span class="menu-item-price">₱150.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Braised chicken in soy sauce and vinegar,
+                                                    served with rice.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/chicken-curry.jpg" alt="Chicken Curry"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Chicken Curry</h5>
+                                                    <span class="menu-item-price">₱185.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Tender chicken simmered in rich coconut curry
+                                                    sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/chicken-afritada.jpg" alt="Chicken Afritada"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Chicken Afritada</h5>
+                                                    <span class="menu-item-price">₱185.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Hearty chicken stew with tomato sauce and
+                                                    vegetables.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/chicken-tinola.jpg" alt="Chicken Tinola"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Chicken Tinola</h5>
+                                                    <span class="menu-item-price">₱175.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Warm chicken soup with ginger and green
+                                                    papaya.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/pork-adobo.jpg" alt="Pork Adobo"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Pork Adobo</h5>
+                                                    <span class="menu-item-price">₱170.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Flavorful pork simmered in soy and vinegar
+                                                    sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/pork-sinigang.jpg" alt="Pork Sinigang"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Pork Sinigang</h5>
+                                                    <span class="menu-item-price">₱185.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Tangy tamarind soup with tender pork and
+                                                    vegetables.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Third Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/pork-menudo.jpg" alt="Pork Menudo"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Pork Menudo</h5>
+                                                    <span class="menu-item-price">₱185.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Savory pork stew with potatoes, carrots, and
+                                                    bell peppers.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/mixed-salad.jpg" alt="Mixed Salad"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Mixed Salad</h5>
+                                                    <span class="menu-item-price">₱65.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Fresh salad with tomatoes, cucumbers, and
+                                                    lettuce.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-md-none text-center">
+                        <button class="btn btn-outline-success me-1" data-bs-target="#lunchCarousel"
+                            data-bs-slide="prev"><i class="bi bi-caret-left small"></i></button>
+                        <button class="btn btn-outline-success" data-bs-target="#lunchCarousel" data-bs-slide="next"><i
+                                class="bi bi-caret-right small"></i></button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Snacks -->
+                <div class="menu-category mb-4 p-0 p-md-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h2 class="mb-0 category-title">Snacks</h2>
+                        <div>
+                            <button class="btn btn-outline-success me-1" data-bs-target="#snackssCarousel"
+                                data-bs-slide="prev"><i class="bi bi-caret-left small"></i></button>
+                            <button class="btn btn-outline-success" data-bs-target="#snackssCarousel"
+                                data-bs-slide="next"><i class="bi bi-caret-right small"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Slides -->
+                    <div id="snackssCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <!-- First Slide -->
+                            <div class="carousel-item menu-row active">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/tb-ham.jpg" alt="Ham Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Ham Sandwich</h5>
+                                                    <span class="menu-item-price">₱45.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Classic ham sandwich on toasted bread.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/tb-cheese.jpg" alt="Cheese Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Cheese Sandwich</h5>
+                                                    <span class="menu-item-price">₱45.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Rich and creamy cheese sandwich, perfectly
+                                                    toasted.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/tb-ham-cheese.jpg" alt="Ham & Cheese Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Ham & Cheese Sandwich</h5>
+                                                    <span class="menu-item-price">₱65.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">A tasty blend of ham and cheese, served on
+                                                    toasted bread.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/tb-burger.jpg" alt="Burger Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Burger Sandwich</h5>
+                                                    <span class="menu-item-price">₱50.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Juicy beef patty served between toasted bread
+                                                    slices.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/tb-tuna.jpg" alt="Tuna Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Tuna Sandwich</h5>
+                                                    <span class="menu-item-price">₱45.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Flaky tuna mixed with mayo on toasted bread.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/tb-egg.jpg" alt="Egg Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Egg Sandwich</h5>
+                                                    <span class="menu-item-price">₱45.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Creamy egg salad layered on crispy toasted
+                                                    bread.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Third Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/fb-ham.jpg" alt="Ham Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Ham Sandwich</h5>
+                                                    <span class="menu-item-price">₱85.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Savory ham slices in fluffy French bread.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/fb-cheese.jpg" alt="Cheese Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Cheese Sandwich</h5>
+                                                    <span class="menu-item-price">₱85.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Melted cheese oozing out of warm French
+                                                    bread.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/fb-ham-cheese.jpg" alt="Ham & Cheese Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Ham & Cheese Sandwich</h5>
+                                                    <span class="menu-item-price">₱95.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">A perfect pairing of ham and cheese in a
+                                                    toasted baguette.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fourth Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/fb-burger.jpg" alt="Burger Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Burger Sandwich</h5>
+                                                    <span class="menu-item-price">₱85.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Succulent beef burger in a crusty French
+                                                    roll.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/fb-tuna.jpg" alt="Tuna Sandwich"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Tuna Sandwich</h5>
+                                                    <span class="menu-item-price">₱85.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Fresh tuna salad stuffed in a French
+                                                    baguette.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/fries.jpg" alt="French Fries"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">French Fries</h5>
+                                                    <span class="menu-item-price">₱85.00</span>
+                                                </div>
+                                                <p class="text-muted pt-2">Golden, crispy fries served hot and fresh.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-md-none text-center">
+                        <button class="btn btn-outline-success me-1" data-bs-target="#snackssCarousel"
+                            data-bs-slide="prev"><i class="bi bi-caret-left small"></i></button>
+                        <button class="btn btn-outline-success" data-bs-target="#snackssCarousel"
+                            data-bs-slide="next"><i class="bi bi-caret-right small"></i></button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Drinks -->
+                <div class="menu-category mb-4 p-0 p-md-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h2 class="mb-0 category-title">Drinks</h2>
+                        <div>
+                            <button class="btn btn-outline-success me-1" data-bs-target="#drinksCarousel"
+                                data-bs-slide="prev"><i class="bi bi-caret-left small"></i></button>
+                            <button class="btn btn-outline-success" data-bs-target="#drinksCarousel"
+                                data-bs-slide="next"><i class="bi bi-caret-right small"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Slides -->
+                    <div id="drinksCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <!-- First Slide -->
+                            <div class="carousel-item menu-row active">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/bottled-water.jpg" alt="Bottled Water"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">Bottled Water</h5>
+                                                    <span class="menu-item-price">₱40.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/black-tea.jpg" alt="Black Tea"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">Black Tea</h5>
+                                                    <span class="menu-item-price">₱20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/juice.jpg" alt="Juice" class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">Juice</h5>
+                                                    <span class="menu-item-price">₱50.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/soft-drinks.jpg" alt="Soft Drinks"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">Soft Drinks</h5>
+                                                    <span class="menu-item-price">₱30.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/soft-drinks1.5.jpg" alt="Soft Drinks (1.5)"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">Soft Drinks (1.5)</h5>
+                                                    <span class="menu-item-price">₱95.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/rumcoke.jpg" alt="Rum and Coke"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">Rum and Coke</h5>
+                                                    <span class="menu-item-price">₱65.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Third Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/san-mig-beer.jpg" alt="San Miguel Beer"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">San Miguel Beer</h5>
+                                                    <span class="menu-item-price">₱60.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/san-mig-light.jpg" alt="San Miguel Light"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">San Miguel Light</h5>
+                                                    <span class="menu-item-price">₱65.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/san-mig-apple.jpg" alt="San Miguel Apple"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">San Miguel Apple</h5>
+                                                    <span class="menu-item-price">₱65.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fourth Slide -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/red-horse.jpg" alt="Red Horse (500ml)"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">Red Horse (500ml)</h5>
+                                                    <span class="menu-item-price">₱75.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/red-horse1.jpg" alt="Red Horse (1L)"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">Red Horse (1L)</h5>
+                                                    <span class="menu-item-price">₱130.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="menu-item">
+                                            <img src="assets/img/menu/san-mig-beer1.jpg" alt="San Miguel Beer (1L)"
+                                                class="menu-item-image">
+                                            <div class="menu-item-content p-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="px-2">San Miguel Beer (1L)</h5>
+                                                    <span class="menu-item-price">₱130.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-md-none text-center">
+                        <button class="btn btn-outline-success me-1" data-bs-target="#drinksCarousel"
+                            data-bs-slide="prev"><i class="bi bi-caret-left small"></i></button>
+                        <button class="btn btn-outline-success" data-bs-target="#drinksCarousel" data-bs-slide="next"><i
+                                class="bi bi-caret-right small"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pt-5">
+        <div class="container text-center font-elegant">
+            <h5 id="year"></h5>
+            <div class="social-links">
+                <a href="#" class="bi bi-facebook" aria-label="Facebook"></a>
+                <a href="#" class="bi bi-twitter" aria-label="Twitter"></a>
+                <a href="#" class="bi bi-instagram" aria-label="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

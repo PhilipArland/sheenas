@@ -1,0 +1,233 @@
+:root {
+    --bg-green: #0E3825;
+    --bg-card: #ffffff;
+    --bg-soft: #198754;
+    --text-soft: #198754;
+    --text-white: #F5F5F5;
+    --bg-details: #f9f9f9;
+    --bg-white: #F5F5F5;
+    --text-green: #0E3825;
+    --text-gray: #333333;
+    --light-mint: #A8D5BA;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    background: linear-gradient(rgba(14, 56, 37, 0.8), rgba(14, 56, 37, 0.8)),
+        url(../img/hero.png);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 140px 0;
+    text-align: center;
+    margin: 0;
+}
+
+#about,
+#rooms,
+#tour,
+#menu {
+    scroll-margin-top: 30px;
+}       
+
+.home-nav {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.home-nav-link {
+    color: var(--text-green);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.rooms-content p {
+    font-size: .8rem;
+}
+
+.rooms-content .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.2);
+}
+
+.rooms-content .card-img-top {
+    height: 450px;
+    object-fit: cover;
+}
+
+.myroom-card {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.room-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90%;
+    background: linear-gradient(to bottom, rgba(14, 56, 37, 0), rgba(14, 56, 37, 0.8));
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.btn-green {
+    background-color: var(--bg-green);
+    color: var(--text-white);
+    transition: background-color 0.3s;
+    padding: 4px 24px;
+    border-radius: 1rem;
+}
+
+.btn-green:hover {
+    background-color: var(--bg-soft);
+}
+
+#tour .carousel .carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.menu-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-items {
+    display: flex;
+    gap: 20px;
+    animation: marquee 30s linear infinite;
+    width: calc(2 * 100%);
+}
+
+.menu-item {
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+    flex: 0 0 auto;
+    width: 350px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-img {
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.menu-price {
+    color: var(--text-green);
+    font-weight: 700;
+}
+
+.menu-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--bg-green);
+    color: var(--text-white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.testimonial-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-name {
+    font-weight: bold;
+}
+
+.testimonial-rating i {
+    color: #ffcc00;
+}
+
+/* Contact Section */
+#contact {
+    background-color: var(--bg-green);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #0e3825;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--bg-green);
+    color: var(--text-white);
+    padding: 3rem 0;
+}
+
+.social-links a {
+    color: var(--text-white);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.content-nav a {
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-green {
+    background-color: var(--bg-green);
+}
