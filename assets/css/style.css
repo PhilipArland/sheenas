@@ -35,12 +35,7 @@
 #tour,
 #menu {
     scroll-margin-top: 30px;
-<<<<<<< HEAD
 }       
-=======
-}
-}
->>>>>>> cd5862ca4b06ed680c03228b0451685a44c970c8
 
 .home-nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -236,8 +231,6 @@ footer {
 .bg-green {
     background-color: var(--bg-green);
 }
-<<<<<<< HEAD
-=======
 
 
 @media screen and (max-width: 576px) {
@@ -265,4 +258,3 @@ footer {
         font-size: 0.8rem;
     }
 }
->>>>>>> cd5862ca4b06ed680c03228b0451685a44c970c8
