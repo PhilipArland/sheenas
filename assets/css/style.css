@@ -238,6 +238,10 @@ footer {
     justify-content: center;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .bg-green {
     background-color: var(--bg-green);
 }
