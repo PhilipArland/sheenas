@@ -104,4 +104,20 @@ footer {
     .container h1 {
         font-size: 1.5rem;
     }
+
+    .home-nav a {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
 }
